@@ -4,7 +4,7 @@
 
   <groupId>org.onyxfx</groupId>
   <artifactId>ofx-graphics</artifactId>
-  <version>1.2.2-SNAPSHOT</version>
+  <version>1.0.0</version>
   <packaging>jar</packaging>
 
   <name>ofx-graphics</name>
@@ -67,6 +67,22 @@
           <target>16</target>
         </configuration>
       </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <version>3.3.0</version>
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
     </plugins>
   </build>
+
 </project>
+
+

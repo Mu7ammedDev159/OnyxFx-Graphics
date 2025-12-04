@@ -1,3 +1,20 @@
+
+/*
+ * Copyright (c) [2025] [Mohammed Joharji]
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 package org.onyxfx.graphics.layout;
 
 import javafx.animation.RotateTransition;
@@ -23,7 +40,19 @@ import javafx.scene.text.Font;
 import javafx.util.Duration;
 
 import java.io.File;
-import java.net.URI;
+
+/**
+ *
+ * @ONYX-FX
+ *
+ * A class for managing show/hide children in a Dropdown List manner,
+ * It has enhanced modern design than original Expandable lists with more controls.
+ *
+ * @author Mohammed Joharji
+ * @version 1.0
+ * @since 2025
+ *
+ */
 
 public class OFxExpandablePane extends VBox {
 
@@ -66,7 +95,6 @@ public class OFxExpandablePane extends VBox {
         arrowImage.addListener((obs, oldImg, newImg) -> {
             if (newImg != null) {
                 arrowIcon.setImage(newImg);
-                System.out.println("🖼 arrowImage set: " + newImg.getUrl());
                 if (newImg.getException() != null) newImg.getException().printStackTrace();
             }
         });
@@ -74,7 +102,6 @@ public class OFxExpandablePane extends VBox {
         arrowImage.addListener((obs, oldImg, newImg) -> {
             if (newImg != null) {
                 String url = newImg.getUrl();
-                System.out.println("🧪 FXML Image URL: " + url);
 
                 try {
                     // If SceneBuilder used @-notation, fix it
@@ -84,18 +111,13 @@ public class OFxExpandablePane extends VBox {
                         if (actualFile.exists()) {
                             Image fixedImage = new Image(actualFile.toURI().toString());
                             arrowIcon.setImage(fixedImage);
-                            System.out.println("✔ Loaded fixed image from file: " + actualFile.getAbsolutePath());
-                        } else {
-                            System.err.println("❌ Fixed path not found: " + actualFile.getAbsolutePath());
                         }
                     } else {
                         // Try default way (e.g., full file:/)
                         arrowIcon.setImage(newImg);
-                        System.out.println("✔ Loaded normal image: " + url);
                     }
                 } catch (Exception e) {
-                    System.err.println("❌ Failed to fix image path: " + url);
-                    e.printStackTrace();
+                    throw new RuntimeException("Failed to fix image path: " + url);
                 }
             }
         });
@@ -103,7 +125,6 @@ public class OFxExpandablePane extends VBox {
         Platform.runLater(() -> {
             if (arrowImage.get() != null) {
                 arrowIcon.setImage(arrowImage.get());
-                System.out.println("✔ Runtime image from FXML: " + arrowImage.get().getUrl());
             }
         });
 
@@ -178,13 +199,11 @@ public class OFxExpandablePane extends VBox {
             } else if (url.startsWith("file:/") || new File(url).exists()) {
                 img = new Image(new File(url).toURI().toURL().toExternalForm());
             } else {
-                System.err.println("❌ Invalid image path: " + url);
                 return;
             }
             arrowIcon.setImage(img);
         } catch (Exception e) {
-            System.err.println("❌ Failed to load image from url: " + url);
-            e.printStackTrace();
+            throw new RuntimeException("Failed to load image from url: " + url);
         }
     }
 

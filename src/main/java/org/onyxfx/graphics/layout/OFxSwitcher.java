@@ -1,6 +1,6 @@
 
 /*
- * Copyright (c) [2025] [MuhammedTJ]
+ * Copyright (c) [2025] [Mohammed Joharji]
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,7 +29,7 @@ import javafx.scene.layout.StackPane;
  * A class for managing switchable views,
  * acting as an index to switch between nodes and javafx controls or elements.
  *
- * @author MuhammedTJ
+ * @author Mohammed Joharji
  * @version 1.0
  * @since 2025
  *

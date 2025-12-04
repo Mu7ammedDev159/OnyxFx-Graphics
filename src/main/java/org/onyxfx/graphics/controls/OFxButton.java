@@ -39,7 +39,7 @@ import java.util.List;
  * A Button class that is customizable to support enhanced styling features.
  * It allows dynamic configuration of visual states such as normal, hover, pressed, and focused colors via properties.
  *
- * @author MuhammedTJ
+ * @author Mohammed Joharji
  * @version 1.0
  * @since 2025
  *

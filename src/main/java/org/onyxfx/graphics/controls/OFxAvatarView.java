@@ -26,6 +26,9 @@ import java.util.prefs.Preferences;
  * - Clickable, hoverable, focusable
  * - Optional image tinting (default avatar only)
  * - Optional status dot with outer ring effect
+ *
+ * @author Mohammed Joharji
+ *
  */
 public class OFxAvatarView extends StackPane {
 
