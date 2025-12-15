@@ -4,7 +4,7 @@
 
   <groupId>org.onyxfx</groupId>
   <artifactId>ofx-graphics</artifactId>
-  <version>1.0.0</version>
+  <version>1.2.1</version>
   <packaging>jar</packaging>
 
   <name>ofx-graphics</name>

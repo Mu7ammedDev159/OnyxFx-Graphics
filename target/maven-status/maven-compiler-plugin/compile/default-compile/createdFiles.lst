@@ -1,9 +1,11 @@
 org\onyxfx\graphics\layout\OFxExpandablePane.class
 org\onyxfx\graphics\controls\OFxButton$StyleableProperties$1.class
+org\onyxfx\graphics\controls\OFxSensitiveTextField.class
 org\onyxfx\graphics\controls\OFxButton.class
 org\onyxfx\graphics\controls\OFxButton$1.class
 org\onyxfx\graphics\controls\OFxButton$2.class
 org\onyxfx\graphics\controls\OFxButton$StyleableProperties$4.class
+org\onyxfx\graphics\controls\OFxSensitiveLabel.class
 org\onyxfx\graphics\controls\OFxButton$3.class
 org\onyxfx\graphics\controls\OFxButton$StyleableProperties$3.class
 org\onyxfx\graphics\controls\OFxButton$StyleableProperties.class
