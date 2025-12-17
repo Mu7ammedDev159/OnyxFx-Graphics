@@ -4,7 +4,7 @@
 
   <groupId>org.onyxfx</groupId>
   <artifactId>ofx-graphics</artifactId>
-  <version>1.2.1</version>
+  <version>1.2.2</version>
   <packaging>jar</packaging>
 
   <name>ofx-graphics</name>
@@ -12,17 +12,27 @@
 
   <repositories>
     <repository>
-      <id>github</id>
-      <url>https://maven.pkg.github.com/Mu7ammedDev159/OnyxFx-Graphics</url>
+<!--      <id>github</id>-->
+<!--      <url>https://maven.pkg.github.com/Mu7ammedDev159/OnyxFx-Graphics</url>-->
+      <id>maven-public</id>
+      <url>http://localhost:8081/repository/maven-public/</url>
     </repository>
   </repositories>
 
   <distributionManagement>
     <repository>
-      <id>github</id>
-      <name>Github Packages</name>
-      <url>https://maven.pkg.github.com/Mu7ammedDev159/OnyxFx-Graphics</url>
+<!--      <id>github</id>-->
+<!--      <name>Github Packages</name>-->
+<!--      <url>https://maven.pkg.github.com/Mu7ammedDev159/OnyxFx-Graphics</url>-->
+      <id>nexus-releases</id>
+      <url>http://localhost:8081/repository/maven-internal-releases/</url>
     </repository>
+
+    <!-- Used when version ends with -SNAPSHOT -->
+    <snapshotRepository>
+      <id>nexus-snapshots</id>
+      <url>http://localhost:8081/repository/maven-internal-snapshots/</url>
+    </snapshotRepository>
   </distributionManagement>
 
   <properties>
@@ -59,18 +69,23 @@
   </dependencies>
   <build>
     <plugins>
+
+      <!-- Compile Java sources -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.13.0</version>
         <configuration>
           <source>16</source>
           <target>16</target>
         </configuration>
       </plugin>
+
+      <!-- Attach sources JAR (contains full source code + comments) -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-source-plugin</artifactId>
-        <version>3.3.0</version>
+        <version>3.3.1</version>
         <executions>
           <execution>
             <id>attach-sources</id>
@@ -80,9 +95,28 @@
           </execution>
         </executions>
       </plugin>
+
+      <!-- Attach JavaDoc JAR (generated from /** JavaDoc */ comments) -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>3.6.3</version>
+        <configuration>
+          <failOnError>false</failOnError>
+          <doclint>none</doclint>
+        </configuration>
+        <executions>
+          <execution>
+            <id>attach-javadocs</id>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
     </plugins>
   </build>
-
 </project>
 
 

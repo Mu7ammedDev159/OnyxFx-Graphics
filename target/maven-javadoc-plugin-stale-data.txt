@@ -1,0 +1,54 @@
+@options
+@packages
+-classpath
+'C:/Users/ninja/.m2/repository/org/openjfx/javafx-controls/21.0.2/javafx-controls-21.0.2.jar;C:/Users/ninja/.m2/repository/org/openjfx/javafx-controls/21.0.2/javafx-controls-21.0.2-win.jar;C:/Users/ninja/.m2/repository/org/openjfx/javafx-fxml/21.0.2/javafx-fxml-21.0.2.jar;C:/Users/ninja/.m2/repository/org/openjfx/javafx-fxml/21.0.2/javafx-fxml-21.0.2-win.jar;C:/Users/ninja/.m2/repository/org/openjfx/javafx-graphics/21.0.2/javafx-graphics-21.0.2.jar;C:/Users/ninja/.m2/repository/org/openjfx/javafx-graphics/21.0.2/javafx-graphics-21.0.2-win.jar;C:/Users/ninja/.m2/repository/org/openjfx/javafx-base/21.0.2/javafx-base-21.0.2.jar;C:/Users/ninja/.m2/repository/org/openjfx/javafx-base/21.0.2/javafx-base-21.0.2-win.jar'
+-encoding
+'UTF-8'
+-protected
+-sourcepath
+'I:/My Maven Dependencies/OnyxFx/JFxSwitcher/src/main/java;I:/My Maven Dependencies/OnyxFx/JFxSwitcher/target/generated-sources/annotations'
+-author
+-bottom
+'Copyright &#169; 2025. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'I:/My Maven Dependencies/OnyxFx/JFxSwitcher/target/apidocs'
+-docencoding
+'UTF-8'
+-Xdoclint:none
+-doctitle
+'ofx-graphics 1.2.2 API'
+-use
+-version
+-windowtitle
+'ofx-graphics 1.2.2 API'
+org.onyxfx.graphics.controls
+org.onyxfx.graphics.layout
+C:\Users\ninja\.m2\repository\org\openjfx\javafx-controls\21.0.2\javafx-controls-21.0.2.jar = 1746830477485
+C:\Users\ninja\.m2\repository\org\openjfx\javafx-controls\21.0.2\javafx-controls-21.0.2-win.jar = 1746830478093
+C:\Users\ninja\.m2\repository\org\openjfx\javafx-fxml\21.0.2\javafx-fxml-21.0.2.jar = 1746830477293
+C:\Users\ninja\.m2\repository\org\openjfx\javafx-fxml\21.0.2\javafx-fxml-21.0.2-win.jar = 1746830477547
+C:\Users\ninja\.m2\repository\org\openjfx\javafx-graphics\21.0.2\javafx-graphics-21.0.2.jar = 1746810284916
+C:\Users\ninja\.m2\repository\org\openjfx\javafx-graphics\21.0.2\javafx-graphics-21.0.2-win.jar = 1746810284798
+C:\Users\ninja\.m2\repository\org\openjfx\javafx-base\21.0.2\javafx-base-21.0.2.jar = 1746810284260
+C:\Users\ninja\.m2\repository\org\openjfx\javafx-base\21.0.2\javafx-base-21.0.2-win.jar = 1746810284742
+I:\My Maven Dependencies\OnyxFx\JFxSwitcher\src\main\java = 1746983264116
+I:\My Maven Dependencies\OnyxFx\JFxSwitcher\target\generated-sources\annotations = 1765900940688
+I:\My Maven Dependencies\OnyxFx\JFxSwitcher\target\apidocs\allclasses-index.html = 1765900946356
+I:\My Maven Dependencies\OnyxFx\JFxSwitcher\target\apidocs\allpackages-index.html = 1765900946360
+I:\My Maven Dependencies\OnyxFx\JFxSwitcher\target\apidocs\element-list = 1765900946255
+I:\My Maven Dependencies\OnyxFx\JFxSwitcher\target\apidocs\help-doc.html = 1765900946400
+I:\My Maven Dependencies\OnyxFx\JFxSwitcher\target\apidocs\index-all.html = 1765900946392
+I:\My Maven Dependencies\OnyxFx\JFxSwitcher\target\apidocs\index.html = 1765900946329
+I:\My Maven Dependencies\OnyxFx\JFxSwitcher\target\apidocs\jquery-ui.overrides.css = 1765900946413
+I:\My Maven Dependencies\OnyxFx\JFxSwitcher\target\apidocs\member-search-index.js = 1765900946365
+I:\My Maven Dependencies\OnyxFx\JFxSwitcher\target\apidocs\module-search-index.js = 1765900946362
+I:\My Maven Dependencies\OnyxFx\JFxSwitcher\target\apidocs\overview-summary.html = 1765900946394
+I:\My Maven Dependencies\OnyxFx\JFxSwitcher\target\apidocs\overview-tree.html = 1765900946319
+I:\My Maven Dependencies\OnyxFx\JFxSwitcher\target\apidocs\package-search-index.js = 1765900946363
+I:\My Maven Dependencies\OnyxFx\JFxSwitcher\target\apidocs\script.js = 1765900946402
+I:\My Maven Dependencies\OnyxFx\JFxSwitcher\target\apidocs\search.js = 1765900946405
+I:\My Maven Dependencies\OnyxFx\JFxSwitcher\target\apidocs\stylesheet.css = 1765900946401
+I:\My Maven Dependencies\OnyxFx\JFxSwitcher\target\apidocs\tag-search-index.js = 1765900946366
+I:\My Maven Dependencies\OnyxFx\JFxSwitcher\target\apidocs\type-search-index.js = 1765900946364
